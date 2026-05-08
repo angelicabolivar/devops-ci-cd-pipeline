@@ -6,6 +6,8 @@ if __name__ == "__main__":
 
 AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLE"
 
-import os
+import subprocess
 
-os.system("ls")
+user_input = "ls"
+
+subprocess.Popen(user_input, shell=True)
