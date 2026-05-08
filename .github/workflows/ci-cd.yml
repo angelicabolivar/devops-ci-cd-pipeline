@@ -27,7 +27,7 @@ jobs:
     - name: Run Semgrep
       run: |
         pip install semgrep
-        semgrep scan --config auto
+        semgrep scan --config auto --error
 
     - name: Run tests
       run: |
